@@ -1,9 +1,129 @@
 <!DOCTYPE html>
-<html>
-<head><title>Contact Romance Agency</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romance Content Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0e0e12;
+      color: #f2f2f4;
+      line-height: 1.6;
+    }
+    header {
+      padding: 22px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #23232b;
+    }
+    .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: .5px; }
+    .logo span { color: #ff3b5c; }
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 90px 6% 70px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 20px; }
+    .hero p.lead { font-size: 1.15rem; color: #b9b9c4; margin-bottom: 40px; }
+    .btn-tiktok {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ff3b5c;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 15px 30px;
+      border-radius: 10px;
+      transition: background .15s ease;
+    }
+    .btn-tiktok:hover { background: #e62e4d; }
+    .note { margin-top: 18px; font-size: .9rem; color: #7d7d8a; }
+    .features {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px 6% 90px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: #16161d;
+      border: 1px solid #23232b;
+      border-radius: 14px;
+      padding: 28px 26px;
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+    .card p { color: #a9a9b6; font-size: .96rem; }
+    .how {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 6% 90px;
+    }
+    .how h2 { font-size: 1.6rem; margin-bottom: 26px; text-align: center; }
+    .how ol { padding-left: 22px; color: #c4c4d0; }
+    .how li { margin-bottom: 12px; }
+    footer {
+      border-top: 1px solid #23232b;
+      padding: 30px 6%;
+      text-align: center;
+      color: #7d7d8a;
+      font-size: .9rem;
+    }
+    footer a { color: #b9b9c4; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
 <body>
-<h1>Contact Romance Agency</h1>
-<p>Internal content management tool.</p>
-<p><a href="/tos.html">Terms of Service</a> | <a href="/privacy.html">Privacy Policy</a></p>
+  <header>
+    <div class="logo">Romance<span>Content</span>Studio</div>
+    <a class="btn-tiktok" href="https://www.tiktok.com/v2/auth/authorize/?client_key=awj1v9bug5pm8f5i&response_type=code&scope=user.info.basic%2Cvideo.publish%2Cvideo.upload&redirect_uri=https%3A%2F%2Fcontactromanceagency-fr.github.io%2Fcallback&state=web_login" style="padding:10px 20px;font-size:.95rem;">Login with TikTok</a>
+  </header>
+
+  <section class="hero">
+    <h1>Schedule and publish your TikTok content in one place</h1>
+    <p class="lead">Romance Content Studio is a content management tool that lets our team connect a TikTok account and publish or schedule short videos directly through the official TikTok Content Posting API.</p>
+    <a class="btn-tiktok" href="https://www.tiktok.com/v2/auth/authorize/?client_key=awj1v9bug5pm8f5i&response_type=code&scope=user.info.basic%2Cvideo.publish%2Cvideo.upload&redirect_uri=https%3A%2F%2Fcontactromanceagency-fr.github.io%2Fcallback&state=web_login">
+      Login with TikTok
+    </a>
+    <p class="note">You will be redirected to TikTok to authorize the connection. We only access the accounts you explicitly connect.</p>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>Connect securely</h3>
+      <p>Sign in with TikTok using the official OAuth flow. You grant access to your own account and can revoke it anytime from TikTok settings.</p>
+    </div>
+    <div class="card">
+      <h3>Publish directly</h3>
+      <p>Send a finished video straight to the connected account, with caption and privacy settings, using the Content Posting API.</p>
+    </div>
+    <div class="card">
+      <h3>Upload as draft</h3>
+      <p>Prefer to review first? Send the video to your TikTok inbox as a draft and finish publishing it from the TikTok app.</p>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>How it works</h2>
+    <ol>
+      <li>Click <strong>Login with TikTok</strong> and authorize the connection on TikTok.</li>
+      <li>Select the video you want to share and add your caption.</li>
+      <li>Choose to publish it directly or send it as a draft to your TikTok inbox.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>
+      <a href="/tos.html">Terms of Service</a> |
+      <a href="/privacy.html">Privacy Policy</a>
+    </p>
+    <p style="margin-top:10px;">&copy; 2026 Romance Content Studio</p>
+  </footer>
 </body>
 </html>
